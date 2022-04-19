@@ -28,7 +28,7 @@ jobs:
       - name: Build dsm 7.1
         id: build-dsm-71
         run: |
-            bash build-universal-7.1.sh ${{github.event.inputs.dsmodel}} ${{github.event.inputs.os_version}} ${{github.event.inputs.pat-address}}
+            bash build-universal-7.1.sh "DS918+"  "42621"  "https://global.download.synology.com/download/DSM/release/7.1/42621/DSM_DS918+_42621.pat"
       - name: Archive loader image
         uses: actions/upload-artifact@v2
         with:
